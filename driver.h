@@ -9,9 +9,9 @@ using namespace std;
 
 
 class Driver {
-    string fileString;
+    char* fileString;
 public:
-    explicit Driver(string arg);
+    explicit Driver(char* arg);
     char* hexToBin(char* input);
     void process();
 

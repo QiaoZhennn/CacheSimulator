@@ -7,7 +7,7 @@
 #include "cache.h"
 using namespace std;
 
-Driver::Driver(string arg) {
+Driver::Driver(char* arg) {
     fileString = arg;
 }
 
@@ -126,7 +126,7 @@ char* Driver::hexToBin(char* input){
 
 
 void Driver::process() {
-    const char* s = fileString.c_str();
+    const char* s = fileString;
     ifstream infile;
     infile.open(s);
     if(!infile.is_open())printf("This file is invalid! \n \n");
